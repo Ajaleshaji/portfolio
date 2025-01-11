@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    header nav ul li {
+      margin: 0 1rem;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    #hero {
+      text-align: center;
+      background-color: #f1f1f1;
+      padding: 4rem 0;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      color: #001f3f;
+    }
+
+    #hero p {
+      color: #444;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .content-box {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    #contact .content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact .box {
+  text-align: center;
+}
+
+#contact .box a {
+  display: inline-block;
+  margin: 0.5rem 0;
+  color: #001f3f;
+  font-size: 1.1rem;
+}
+
+#contact .box a:hover {
+  text-decoration: underline;
+}
+
+
+    .box {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: calc(50% - 2rem);
+      min-width: 280px;
+      text-align: left;
+    }
+
+    #about img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 1rem auto;
+    }
+    #about {
+  text-align: center;
+}
+
+#about .box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#about img {
+  margin: 1rem auto;
+}
+
+
+    h2 {
+      color: #001f3f;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    #projects, #contact {
+      background-color: #f1f1f1;
+    }
+
+    a {
+      color: #001f3f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .bx {
+      margin-right: 8px;
+    }
+
+    .project a {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    footer {
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+#projects .box:hover {
+  cursor: pointer; 
+  background-color: #001f3f; 
+  color: #f8f9fa; 
+}
+#texts .box:hover {
+  cursor: pointer; 
+  background-color: #001f3f; 
+  color: #f8f9fa;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#texts">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p><strong>Hi, I'm Ajalesh<br> A passionate developer</strong></p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="box">
+      <img src="IMG_20250110_095636.jpg" alt="Ajalesh">
+      <p>I’m Ajalesh, a passionate Computer Science and Engineering student at Sri Eswar College of Engineering. I am driven by my enthusiasm for technology and innovation, with a keen interest in solving real-world problems through coding and software development.</p>
+    </div>
+  </section>
+
+  <section id="texts">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="box">
+        <h3>Programming Languages</h3><br>
+        <p>Java, Python, C++, HTML, CSS</p>
+      </div>
+      <div class="box">
+        <h3>Frameworks & Tools</h3><br>
+        <p>Visual Studio Code, Eclipse, Canva, Git, GitHub</p>
+      </div>
+      <div class="box">
+        <h3>Software Development</h3><br>
+        <p>OOP, Data Structures and Algorithms, Software Testing and Debugging</p>
+      </div>
+      <div class="box">
+        <h3>Other Skills</h3><br>
+        <p>Problem Solving, JavaFX</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="content-box">
+      <div class="box">
+        <h3>Project 1</h3>
+        <p><strong>Shopping Cart Product Recommendation System for Retailers</strong></p><br>
+        <p>This project enhances customer shopping experiences by providing personalized product recommendations.</p>
+      </div>
+      <div class="box">
+        <h3>Project 2</h3>
+        <p><strong>Java-Based Job Recommendation System with Skill Matching and Industry Trends</strong></p><br>
+        <p>The project addresses the need for efficient and accurate job recommendation systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="content-box">
+      <div class="box">
+        <a href="mailto:ajalesh.b2023lcse@sece.ac.in"><i class='bx bxl-gmail'></i>Gmail</a>
+        <a href="https://github.com/Ajaleshaji"><i class='bx bxl-github'></i>GitHub</a>
+        <a href="https://www.linkedin.com/in/ajalesh-undefined-789b382a7"><i class='bx bxl-linkedin-square'></i>LinkedIn</a>
+        <a href="https://www.instagram.com/_ajalesh_/"><i class='bx bxl-instagram-alt'></i>Instagram</a>
+      </div>
+    </div>
+  </section>
+  <body>
+    <footer>
+      <p>&copy; 2025 Ajalesh. All rights reserved.</p>
+    </footer>
+  </body>
+  
+</body>
+</html>
